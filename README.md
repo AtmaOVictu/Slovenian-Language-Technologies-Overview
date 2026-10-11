@@ -16,6 +16,7 @@ Content:
 - [Fine-tuned models for Slovenian](#fine-tuned-models-for-slovenian)
 - [Speech technologies for Slovenian](#speech-technologies-for-slovenian)
 - [Other language technologies for Slovenian](#other-language-technologies-for-slovenian)
+- [Verification & Anti-Hallucination Resources for Slovenian](#verification--anti-hallucination-resources-for-slovenian)
 - [Authors](#authors)
 
 ## Generative Models (LLMs) for Slovenian
@@ -148,6 +149,14 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 - [Treebank analysis tool STARK](https://github.com/clarinsi/STARK) for extraction and analysis of different types of syntactic structures (trees) from parsed corpora (treebanks). The demo is available [here](https://orodja.cjvt.si/stark/).
 - [A System for Semantic Change Detection for Slovenian](https://github.com/RSDO-DS3/SloSemanticShiftDetection?tab=readme-ov-file) ([Montariol et al., 2021](https://aclanthology.org/2021.naacl-main.369/))
 
+
+## Verification & Anti-Hallucination Resources for Slovenian
+
+**Frameworks**:
+
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working anti-hallucination regime for low-resource languages, built from named, recorded model failures in Slovenian. Five laws (sourced-entry-before-utterance, independent verification, append-only scarred corrections, report-after-the-act, pre-flight checks) implemented as dependency-free, tested Python; a machine-readable claim-format contract (⊢ sourced / ⚠ open) loadable into any session or pipeline; and a register of recorded model-invented "hybrid words" in Slovenian (plausible-looking compounds absent from SSKJ²/Fran) caught by dictionary lookup alone.
+
+**Why this row matters for Slovenian**: national efforts (POVEJMO, GaMS) contributed *volume*; verification resources contribute *provenance* — the distinction between measured and invented model output. See the accompanying position paper on the provenance layer for contributed language data in the same repository.
 
 ## Authors
 
