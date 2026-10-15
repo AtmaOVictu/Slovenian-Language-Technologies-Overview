@@ -157,7 +157,7 @@ This document is supported by [CLASSLA](https://www.clarin.si/info/k-centre/), t
 To be informed of new resources, technologies, events and projects for South Slavic languages:
 - you can subscribe to the [mailing list](https://mailman.ijs.si/mailman/listinfo/classla)
 - follow CLARIN.SI on [X](https://x.com/ClarinSlovenia) and [LinkedIn](https://www.linkedin.com/company/clarin-si)
-- join the Discord group "Slovenska skupnost za jezikovne vire in tehnologije" ([invite](https://discord.com/invite/vQDRpGMU7C))
+- join the [Discord group "Slovenska skupnost za jezikovne vire in tehnologije"](https://discord.com/invite/vQDRpGMU7C)
 
 The main author and curator of this document is: Taja Kuzman Pungeršek (Department of Knowledge Technologies, Jožef Stefan Institute).
 
