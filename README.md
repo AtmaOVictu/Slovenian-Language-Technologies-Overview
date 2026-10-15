@@ -1,5 +1,5 @@
 # Slovenian Language Technologies Overview
-A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language. The overview is curated by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
+A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language. The overview primarily focuses on **open-source** resources, models, and research papers. The overview is curated by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
 
 For an overview of freely-available datasets for Slovenian language, including general **text collections, and training and test datasets** for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
@@ -29,7 +29,7 @@ Content:
 	- [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl)
 	- [Aya](https://huggingface.co/CohereForAI/aya-101)
 - other open-source instruction-tuned and base models that are often used by researchers for fine-tuning experiments in Slovenian language:
-	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
+	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a1499a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8f32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
 	- [Gemma](https://huggingface.co/google/gemma-7b) and instruction-tuned [Gemma-it](https://huggingface.co/google/gemma-7b-it) models: slightly worse results in Slovenian summarization.
 - based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian for classification tasks
 
@@ -39,6 +39,7 @@ Content:
 **Benchmarks**:
 - [SloBench evaluation for generative models](https://github.com/SloLama/slobench_evaluation): a framework that supports evaluation of generative models on SloBench tasks (using Slovene SuperGLUE and SI-NLI datasets).
 - [Slovenian LLM Evaluation](https://github.com/SloLama/slovenian-llm-eval): a framework that supports evaluation of generative models on the [Slovenian LLM Evaluation Dataset](https://huggingface.co/datasets/cjvt/slovenian-llm-eval). The dataset comprises multiple common English benchmarks (ARC Challenge, ARC Easy, BoolQ, HellaSwag, NQ Open, OpenBookQA, PIQA, TriviaQA, Winogrande) that were machine-translated to Slovenian.
+- [Verification-Before-Assertion (VBA)](https://github.com/AtmaOVictu/verification-before-assertion): an open-source, dependency-free Python framework for claim provenance in Slovenian LLM output — every word used as "measured" must carry a sourced dictionary entry (⊢, SSKJ²/Fran) or an explicit ⚠ (unverified) mark, and model failure modes (e.g., invented "hybrid" words that pass as real Slovenian) are recorded in an append-only register of named falls. Ships with a pre-registered measurement protocol and a live comparison of mistral-large-latest with and without the contract (sourced claims 9 → 36 per run; caught hybrids 0 → 1), runnable with zero dependencies (python test_vba.py). Complements task-performance benchmarks such as SloBench by measuring claim provenance. Methodology: CC BY 4.0.
 
 **Papers**:
 - [Generative Model for Less-Resourced Language with 1 Billion Parameters](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf) (Vreš et al., 2024)
@@ -79,7 +80,7 @@ Content:
 
 **Massively Multilingual Models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks ([Conneau et al., 2019](https://aclanthology.org/2020.acl-main.747.pdf))
-- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
+- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393.pdf))
 
 **Papers**:
 - [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
@@ -156,9 +157,9 @@ This document is supported by [CLASSLA](https://www.clarin.si/info/k-centre/), t
 To be informed of new resources, technologies, events and projects for South Slavic languages:
 - you can subscribe to the [mailing list](https://mailman.ijs.si/mailman/listinfo/classla)
 - follow CLARIN.SI on [X](https://x.com/ClarinSlovenia) and [LinkedIn](https://www.linkedin.com/company/clarin-si)
-- join the [Discord group "Slovenska skupnost za jezikovne vire in tehnologije"](https://discord.com/invite/vQDRpGMU7C)
+- join the Discord group "Slovenska skupnost za jezikovne vire in tehnologije" ([invite](https://discord.com/invite/vQDRpGMU7C))
 
-The main author and curator of this document is: Taja Kuzman (Department of Knowledge Technologies, Jožef Stefan Institute).
+The main author and curator of this document is: Taja Kuzman Pungeršek (Department of Knowledge Technologies, Jožef Stefan Institute).
 
 Special thanks also to other contributors:
 - Peter Rupnik (Department of Knowledge Technologies, Jožef Stefan Institute)
