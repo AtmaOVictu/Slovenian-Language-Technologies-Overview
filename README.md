@@ -29,7 +29,7 @@ Content:
 	- [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl)
 	- [Aya](https://huggingface.co/CohereForAI/aya-101)
 - other open-source instruction-tuned and base models that are often used by researchers for fine-tuning experiments in Slovenian language:
-	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a1499a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8f32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
+	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
 	- [Gemma](https://huggingface.co/google/gemma-7b) and instruction-tuned [Gemma-it](https://huggingface.co/google/gemma-7b-it) models: slightly worse results in Slovenian summarization.
 - based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian for classification tasks
 
@@ -80,7 +80,7 @@ Content:
 
 **Massively Multilingual Models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks ([Conneau et al., 2019](https://aclanthology.org/2020.acl-main.747.pdf))
-- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393.pdf))
+- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
 
 **Papers**:
 - [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
